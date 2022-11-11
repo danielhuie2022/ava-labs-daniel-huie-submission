@@ -61,7 +61,7 @@ const Card: React.FC<Props> = ({
                     <Sparkline sparklineData={sparklineData.price} width={100} height={60} showTooltip={false} />
                 </CardColumnCenter>
                 <CardColumnRight>
-                    <BoldedTitle>{volume} {name.toUpperCase()}</BoldedTitle>
+                    <BoldedTitle>{volume} {symbol}</BoldedTitle>
                     <Subtitle>24h volume</Subtitle>
                 </CardColumnRight>
                 <CardColumnRight>
@@ -71,7 +71,7 @@ const Card: React.FC<Props> = ({
             </CardContainer>
             {showDrawer && (
                 <CardDrawer>
-                    <Sparkline sparklineData={sparklineData.price} width={500} height={50} showTooltip={true} />       
+                    <Sparkline sparklineData={sparklineData.price} width={500} height={50} showTooltip={true} />
                 </CardDrawer>
             )}
         </React.Fragment>
