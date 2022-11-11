@@ -61,7 +61,7 @@ const Card: React.FC<Props> = ({
                     <Sparkline sparklineData={sparklineData.price} width={100} height={60} showTooltip={false} />
                 </CardColumnCenter>
                 <CardColumnRight>
-                    <BoldedTitle>{volume} {symbol}</BoldedTitle>
+                    <BoldedTitle>{volume} {symbol.toUpperCase()}</BoldedTitle>
                     <Subtitle>24h volume</Subtitle>
                 </CardColumnRight>
                 <CardColumnRight>
